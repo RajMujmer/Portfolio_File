@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[Your Name] | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">[Your Name]</a>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-outline" href="assets/[YourName]-Resume.pdf" download>Download Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container fade-in">
+      <div class="hero-text">
+        <h1>Result‑oriented Developer crafting measurable impact</h1>
+        <p>I build fast, accessible products—backed by metrics, not buzzwords.</p>
+        <div class="cta">
+          <a href="projects.html" class="btn">View My Work</a>
+          <a href="about.html" class="btn btn-outline">About Me</a>
+        </div>
+        <ul class="highlights">
+          <li><strong>+40%</strong> revenue uplift on e‑commerce revamp</li>
+          <li><strong>−70%</strong> reporting time via analytics dashboards</li>
+          <li><strong>+60%</strong> recruiter engagement with portfolio redesign</li>
+        </ul>
+      </div>
+      <div class="hero-card">
+        <div class="metric">
+          <span class="metric-value">98</span><span class="metric-unit">/100</span>
+          <p class="metric-label">Lighthouse Performance</p>
+        </div>
+        <div class="metric">
+          <span class="metric-value">A+</span>
+          <p class="metric-label">Accessibility Score</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section fade-up">
+      <h2>Featured projects</h2>
+      <div class="grid">
+        <article class="card" data-modal="p1">
+          <h3>E‑commerce Platform</h3>
+          <p>Scalable store; sales up <strong>40%</strong> in 6 months.</p>
+          <div class="card-actions">
+            <a href="#" class="link">Live Demo</a>
+            <button class="btn btn-small" data-open="p1">Preview</button>
+          </div>
+        </article>
+        <article class="card" data-modal="p2">
+          <h3>Portfolio Redesign</h3>
+          <p>Recruiter engagement up <strong>60%</strong>.</p>
+          <div class="card-actions">
+            <a href="#" class="link">Case Study</a>
+            <button class="btn btn-small" data-open="p2">Preview</button>
+          </div>
+        </article>
+        <article class="card" data-modal="p3">
+          <h3>Analytics Dashboard</h3>
+          <p>Reporting time down <strong>70%</strong>.</p>
+          <div class="card-actions">
+            <a href="#" class="link">GitHub</a>
+            <button class="btn btn-small" data-open="p3">Preview</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modals -->
+  <div class="modal" id="p1" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" data-close>&times;</button>
+      <h3>E‑commerce Platform</h3>
+      <p>Built with Next.js, Stripe, and a headless CMS. Implemented A/B tests and caching—cut TTFB by 35%.</p>
+      <img src="assets/ecommerce-preview.jpg" alt="E-commerce preview" />
+    </div>
+  </div>
+  <div class="modal" id="p2" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" data-close>&times;</button>
+      <h3>Portfolio Redesign</h3>
+      <p>Accessibility-first rebuild; semantic HTML, ARIA, and performance budgets. +60% recruiter engagement.</p>
+      <img src="assets/portfolio-preview.jpg" alt="Portfolio preview" />
+    </div>
+  </div>
+  <div class="modal" id="p3" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" data-close>&times;</button>
+      <h3>Analytics Dashboard</h3>
+      <p>Role-based access, charting with D3, and scheduled exports. Reduced manual reporting by 70%.</p>
+      <img src="assets/dashboard-preview.jpg" alt="Dashboard preview" />
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 [Your Name] · Built with care</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
